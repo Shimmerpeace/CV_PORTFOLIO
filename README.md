@@ -1,3 +1,4 @@
+
 npm install -D tailwindcss@3 postcss autoprefixer
 1. Installs tailwindcss which is the main library providing all the utility classes used for the project
 2. Installs postcss which is a tool that helps tailwind process and transforms the css behind the scenes
