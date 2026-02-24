@@ -4,7 +4,6 @@ import { FiGithub, FiTwitter, FiLinkedin, FiMenu, FiX } from "react-icons/fi";
 // import emailjs from "emailjs-com";
 import emailjs from "@emailjs/browser";
 
-
 const Header = () => {
   // Toggle the menu open/close
   const [isOpen, setIsOpen] = useState(false);
@@ -24,11 +23,9 @@ const Header = () => {
   const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
   const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
   const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-  console.log('EmailJS Debug:', {
-    serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-    templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-    publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-  });
+  console.log("Service ID:", import.meta.env.VITE_EMAILJS_SERVICE_ID);
+  console.log("Template ID:", import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
+  console.log("Public Key:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
   const handleSendEmail = (e) => {
     e.preventDefault();
